@@ -86,4 +86,14 @@ function is_block($url){
 	}
 }
 
+function getClasses(){
+    global $db_stickers;
+    $query = $db_stickers->query("SELECT `class-id`,`class-name`,`facilitator`,`link`,`block`,`black`,`grey`,`white` FROM offerings");
+    $offerings = array();
+	while ($classData = $query->fetch_assoc()) {
+		array_push($offerings, $classData);
+    }
+    echo(json_encode($offerings, JSON_PRETTY_PRINT));
+}
+
 ?>

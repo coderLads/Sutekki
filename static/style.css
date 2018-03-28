@@ -1,0 +1,17 @@
+:root {
+    --main-acent: #70a5ff;
+}
+
+.class-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sticker-card {
+    padding: 10px 30px;
+    border: 1px solid var(--main-acent);
+    margin: 3px 10px;
+    min-width: 200px;
+}
