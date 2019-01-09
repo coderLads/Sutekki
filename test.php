@@ -2,8 +2,8 @@
 
 require_once("php/stickerfunctions.php");
 
-// resetStickers();
+resetStickers();
 
-getClasses();
+// getClasses();
 
 ?>
